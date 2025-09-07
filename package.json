@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "type": "module",
+  "files": ["dist"],
+  "devDependencies": {
+    "postcss": "^8.4.21",
+    "postcss-variable-compress": "^2.0.1",
+    "vite": "latest",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-webfont-dl": "^3.6.1"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "laravel-vite-plugin": "^0.7.4",
+    "vite-plugin-fonts": "^0.7.0"
+  }
+}
