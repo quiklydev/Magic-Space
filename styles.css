@@ -1,4 +1,10 @@
 @import './fonts/_fonts.scss';
+
+:root {
+    --primary-color: #20a4e7;
+    --secondary-color: #94A3B8;
+}
+
 html
 {
     display: block;
@@ -8,6 +14,7 @@ html
 
 html, body
 {
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     height: 100%;
     margin: 0em;
@@ -23,7 +30,7 @@ overflow: auto
 }
 
 .container {
-    position: fixed;
+    position: relative;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -32,7 +39,7 @@ overflow: auto
    margin-top: 5.6em;
     margin-left: 5.1em;
     object-fit: cover;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 .logo{
@@ -62,11 +69,10 @@ h3.centralog{
     position: absolute;
    font-size: 2em;
    font-family: Pacifico;
-   color: rgb(20, 153, 137);
+   color: var(--primary-color);
    background-size: 10%;
    z-index: 2;
    opacity: 1;
-   font-size: 2.1em;
    margin-top: 0.7em;
    margin-left: 1.1em;
    
@@ -74,9 +80,8 @@ h3.centralog{
 h4.log{
     position: absolute;
     font-size: 1.3em;
-    color: cadetblue;
+    color: var(--secondary-color);
     font-family: 'Segoe UI';
-    font-size: 1.2em;
     margin-top: 8.7em;
     margin-left: 1.7em;
     z-index: 2;
@@ -124,7 +129,7 @@ video.moonweb{
 p.moonmain{
     box-sizing: border-box;
     font-size: 1.3em;
-    color: cadetblue;
+    color: var(--secondary-color);
     font-family: Impact, Segoe UI;
    display: block;
    max-width: 30%;
@@ -171,13 +176,13 @@ button {
   }
 
 .btro:hover {
-    color: cadetblue;
+    color: var(--secondary-color);
     box-sizing: border-box;
     z-index: 1;
   }
 
   .btro:active {
-    color: cadetblue;
+    color: var(--secondary-color);
     background-color: rgb(1, 1, 24);
     box-sizing: border-box;
     z-index: 1;
@@ -222,7 +227,7 @@ button {
 h1.moonmain2{
     box-sizing: border-box;
     font-size: 2.9em;
-    color: cadetblue;
+    color: var(--secondary-color);
     font-family: Impact, Segoe UI;
    display: block;
    max-width: 30%;
@@ -237,7 +242,7 @@ h1.moonmain2{
 p.moonmain3{
     box-sizing: border-box;
     font-size: 1.3em;
-    color: cadetblue;
+    color: var(--secondary-color);
     font-family: Impact, Segoe UI;
    display: block;
    margin-top: 1em;
@@ -257,7 +262,7 @@ p.moonmain3{
 p.moonmain4{
     box-sizing: border-box;
     font-size: 1.3em;
-    color: cadetblue;
+    color: var(--secondary-color);
     font-family: Impact, Segoe UI;
    display: block;
    margin-left: auto;
@@ -273,7 +278,7 @@ p.moonmain4{
 p.moonmain5{
     box-sizing: border-box;
     font-size: 1.3em;
-    color: cadetblue;
+    color: var(--secondary-color);
     font-family: Impact, Segoe UI;
    display: block;  
    position: absolute;
@@ -284,6 +289,19 @@ p.moonmain5{
    margin-bottom: auto;
    margin-left: 6em;
    margin-top: 6em;
+}
+
+h3.centralog {
+    font-family: 'Pacifico', cursive; 
+}
+
+h4.log, 
+p.moonmain, 
+h1.moonmain2, 
+p.moonmain3, 
+p.moonmain4, 
+p.moonmain5 {
+    font-family: 'Roboto', sans-serif;
 }
 
 
