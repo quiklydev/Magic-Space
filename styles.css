@@ -73,8 +73,8 @@ img.logoden{
    width: auto;
    height: auto;
    pointer-events: auto;
-    
 }
+
 h3.centralog{
     position: absolute;
    font-size: 2em;
@@ -85,8 +85,8 @@ h3.centralog{
    opacity: 1;
    margin-top: 0.7em;
    margin-left: 1.1em;
-   
 }
+
 h4.log{
     position: absolute;
     font-size: 1.3em;
@@ -152,11 +152,12 @@ p.moonmain{
 display: flex;
 justify-content: center;
 align-items: center;
-    z-index: 1000;
+    z-index: 10000;
     grid-column: 1/3;
     grid-row: 1/3;
    text-align: center;
    font-size: 1.5em;
+   position: relative;
 }
 
 button {
@@ -185,6 +186,25 @@ button {
     pointer-events: all;
   }
 
+  .register button.btro {
+  position: relative;
+  z-index: 10001;
+  pointer-events: auto;
+}
+
+.main-bottom,
+.wrapper,
+.moontext2,
+.main-bottom h1,
+.main-bottom p {
+  pointer-events: none;
+}
+
+.main-bottom h1,
+.main-bottom p {
+  pointer-events: auto;
+}
+
 .btro:hover {
     color: var(--secondary-color);
     box-sizing: border-box;
@@ -206,7 +226,6 @@ button {
     z-index: 1;
     grid-column: 1/3;
     grid-row: 1/3;
-    pointer-events: auto;
     width: 100%;
 }
 .wrapper{
