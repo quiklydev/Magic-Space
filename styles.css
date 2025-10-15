@@ -89,7 +89,7 @@ h3.centralog{
 
 h4.log{
     position: absolute;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: var(--secondary-color);
     font-family: 'Segoe UI';
     margin-top: 8.7em;
@@ -134,6 +134,7 @@ video.moonweb{
     filter: contrast(2);
     word-wrap: break-word;
     pointer-events: none;
+    margin-bottom: 2em;
 }
 
 p.moonmain{
@@ -152,12 +153,13 @@ p.moonmain{
 display: flex;
 justify-content: center;
 align-items: center;
-    z-index: 10000;
+    z-index: 10001;
     grid-column: 1/3;
     grid-row: 1/3;
    text-align: center;
    font-size: 1.5em;
    position: relative;
+   margin-top: 1em;
 }
 
 button {
@@ -252,7 +254,6 @@ button {
 
 h1.moonmain2{
     box-sizing: border-box;
-    font-size: 2.9em;
     color: var(--secondary-color);
     font-family: Impact, Segoe UI;
    display: block;
@@ -265,23 +266,28 @@ h1.moonmain2{
    
 }
 
+.prices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
 p.moonmain3{
     box-sizing: border-box;
     font-size: 1.3em;
     color: var(--secondary-color);
     font-family: Impact, Segoe UI;
-   display: block;
-   margin-top: 1em;
-   margin-bottom: 6em;
+   margin: 0.5em 0;
    line-height: 1.2;
    text-indent: 1em;
    text-decoration-line: underline;
    text-decoration-color: #070148;
-   position: absolute;
+   position: static;
    white-space: nowrap;
    margin-left: auto;
    margin-right: auto;
-   display: flex;
+   display: block;  
    filter: contrast(2);
  
 }
@@ -291,11 +297,8 @@ p.moonmain4{
     color: var(--secondary-color);
     font-family: Impact, Segoe UI;
    display: block;
-   margin-left: auto;
-   margin-bottom: auto;
-   margin-right: 6em;
-   margin-top: 6em;
-   position: absolute;
+   margin: 0.5em 0;
+   position: static;
    text-decoration: line-through rgb(69, 1, 1);
    filter: contrast(2);
    white-space: nowrap;
@@ -307,14 +310,11 @@ p.moonmain5{
     color: var(--secondary-color);
     font-family: Impact, Segoe UI;
    display: block;  
-   position: absolute;
+   position: static;
    text-decoration: underline;
    filter: contrast(2);
    white-space: nowrap;
-   margin-right: auto;
-   margin-bottom: auto;
-   margin-left: 6em;
-   margin-top: 6em;
+   margin: 0.5em 0;
 }
 
 h3.centralog {
@@ -329,802 +329,82 @@ p.moonmain4,
 p.moonmain5 {
     font-family: 'Roboto', sans-serif;
 }
-
-
-/**portrait*/
-@media screen and (orientation : portrait)
-and (min-width : 50px) 
-and (max-width : 269px) { 
-    button {
-        width: 8.1em;
-        height: 1.8em; 
-    }
-    .register{
-        font-size: 0.8em;
-        justify-content: center;
-        margin-bottom: 0em;
-        margin-top: 14em;
-        margin-left: auto;
-        margin-right: auto;
-         }
-    .moontext1{
-        justify-content: center;
-        height: 90%;
-        width: 90%;
-        grid-row: 1/3; 
-        grid-column: 1/3;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-     }
-     p.moonmain{
-        max-width: 100%;
-        height: 50%;
-        margin-bottom: 0em;
-        margin-top: 12em;
-        font-size: 1.0em;
-    }
-        h3.centralog {
-            font-size: 1.0em;
-            margin-top: 0.8em;
-            margin-left: 0.0em;
-        }
-                    h4.log {
-                    font-size: 0.5em;
-                    margin-top: 8.9em;
-                    margin-left: 0em;
-                }
-                img.logoden{
-                    width: 100px;
-                   }    
-                   .container{
-                    justify-content: center;
-                    
-                    margin-left: 0em;
-                    margin-right: 0em;
-                   }
-                   .logo{
-                    justify-content: center;
-                    margin-left: 0em;
-                    margin-right: 0em;
-                 }
-                     h1.moonmain2{
-                        font-size: 1.1em;
-                     }
-                     
-}
-@media screen  and (orientation : portrait)
-and (min-width : 270px) 
-and (max-width : 319px) { 
-    button {
-        width: 8.1em;
-        height: 1.8em; 
-    }
-    .register{
-        font-size: 0.9em;
-        justify-content: center;
-        margin-bottom: 0em;
-        margin-top: 20em;
-        margin-left: auto;
-        margin-right: auto;
-         }
-    .moontext1{
-        justify-content: center;
-        height: 90%;
-        width: 90%;
-        grid-row: 1/3; 
-        grid-column: 1/3;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-     }
-     p.moonmain{
-        max-width: 100%;
-        height: 50%;
-        margin-bottom: 0em;
-        margin-top: 10em;
-        font-size: 1.3em;
-    }
-        h3.centralog {
-            font-size: 1.4em;
-            margin-top: 0.8em;
-            margin-left: 0.0em;
-        }
-                    h4.log {
-                    font-size: 0.7em;
-                    margin-top: 8.9em;
-                    margin-left: 0em;
-                }
-                img.logoden{
-                    width: 150px;
-                   }    
-                   .container {
-                    justify-content: center;
-                        margin-left: auto;
-                        margin-right: auto;
-                   }
-                   .logo{
-                    justify-content: center;
-                    margin-left: auto;
-                    margin-right: auto;
-                 }
-                     h1.moonmain2{
-                        font-size: 1.1em;
-                     }
-                     
+/*==Info section (Features, How It Works, and Deals)==*/
+.info-block {
+    padding: 2em;
+    text-align: center;
+    margin: 2em auto;
+    max-width: 900px;
+    color: var(--secondary-color);
 }
 
-@media screen  and (orientation : portrait)
-and (min-width : 320px) 
-and (max-width : 374px)  { 
-    
-    .register{
-        font-size: 1em;
-        justify-content: center;
-        margin-bottom: 0em;
-        margin-top: 14em;
-        margin-left: auto;
-        margin-right: auto;
-         }
-    .moontext1{
-        justify-content: center;
-        height: 90%;
-        width: 90%;
-        grid-row: 1/3; 
-        grid-column: 1/3;
-        display: flex;
-        margin-left: 1em;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-     }
-     p.moonmain{
-        max-width: 100%;
-        height: 50%;
-        margin-bottom: 0em;
-        margin-top: 10em;
-        font-size: 1.3em;
-    }
-        h3.centralog {
-            font-size: 1.4em;
-            margin-top: 0.8em;
-            margin-left: 0.0em;
-        }
-                    h4.log {
-                    font-size: 0.7em;
-                    margin-top: 8.9em;
-                    margin-left: 0.0em;
-                }
-                img.logoden{
-                    width: 150px;
-                   }    
-                   
-                   .container{
-                    justify-content: center;
-                        margin-left: auto;
-                        margin-right: auto;
-                   }
-                   .logo{
-                    justify-content: center;
-                    margin-left: auto;
-                    margin-right: auto;
-                 }
-                     h1.moonmain2{
-                        font-size: 1.5em;
-                     }
-                     
+.info-block h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
 }
 
-@media screen  and (orientation : portrait)
-and (min-width : 375px) 
-and (max-width : 424px)  { 
-    
-    .register{
-        font-size: 1em;
-        justify-content: center;
-        margin-bottom: 0em;
-        margin-top: 14em;
-        margin-left: auto;
-        margin-right: auto;
-         }
-    .moontext1{
-        justify-content: center;
-        height: 90%;
-        width: 90%;
-        grid-row: 1/3; 
-        grid-column: 1/3;
-        display: flex;
-        margin-left: 1em;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-     }
-     p.moonmain{
-        max-width: 100%;
-        height: 50%;
-        margin-bottom: 0em;
-        margin-top: 10em;
-        font-size: 1.3em;
-    }
-        h3.centralog {
-            font-size: 1.4em;
-            margin-top: 0.8em;
-            margin-left: 0.0em;
-        }
-                    h4.log {
-                    font-size: 0.7em;
-                    margin-top: 8.9em;
-                    margin-left: 0.0em;
-                }
-                img.logoden{
-                    width: 150px;
-                   }    
-                   
-                   .container {
-                    justify-content: center;
-                        margin-left: auto;
-                        margin-right: auto;
-                   }
-                   .logo{
-                    justify-content: center;
-                    margin-left: auto;
-                    margin-right: auto;
-                 }
-                     h1.moonmain2{
-                        font-size: 1.5em;
-                     }
-                     
+#deals form {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 1em;
 }
-@media screen  and (orientation : portrait)
-        and (min-width : 425px) 
-        and (max-width : 767px)  { 
-            .register{
-                font-size: 1em;
-                justify-content: center;
-                margin-bottom: 0em;
-                margin-top: 10em;
-                margin-left: auto;
-                margin-right: auto;
-                 }
-            .moontext1{
-                justify-content: center;
-                height: 90vh;
-                width: 90vw;
-                grid-row: 1/3; 
-                grid-column: 1/3;
-                display: flex;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-             }
-             p.moonmain{
-                max-width: 100%;
-                height: 50%;
-                margin-bottom: 0em;
-                margin-top: 10em;
-                font-size: 1.3em;
-            }
-                h3.centralog {
-                    font-size: 1.4em;
-                    margin-top: 0.8em;
-                    margin-left: 0.0em;
-                }
-                            h4.log {
-                            font-size: 0.7em;
-                            margin-top: 8.9em;
-                            margin-left: 0.0em;
-                        }
-                        img.logoden{
-                            width: 150px;
-                           }    
-                           .container{
-                            justify-content: center;
-                                margin-left: auto;
-                                margin-right: auto;
-                           }
-                           .logo{
-                            justify-content: center;
-                            margin-left: auto;
-                            margin-right: auto;
-                         }
-                             h1.moonmain2{
-                                font-size: 1.8em;
-                             }
-                             
-        }
-        @media screen  and (orientation : portrait)
-        and (min-width : 768px) 
-        and (max-width : 1023px)  { 
-            .register{
-                font-size: 1em;
-                justify-content: center;
-                margin-bottom: 0em;
-                margin-top: 10em;
-                margin-left: auto;
-                margin-right: auto;
-                 }
-            .moontext1{
-                justify-content: center;
-                height: 90%;
-                width: 90%;
-                grid-row: 1/3; 
-                grid-column: 1/3;
-                display: flex;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-             }
-             p.moonmain{
-                max-width: 100%;
-                height: 50%;
-                margin-bottom: 0em;
-                margin-top: 10em;
-                font-size: 1.3em;
-            }
-                h3.centralog {
-                    font-size: 1.4em;
-                    margin-top: 0.8em;
-                    margin-left: 0.0em;
-                }
-                            h4.log {
-                            font-size: 0.7em;
-                            margin-top: 8.9em;
-                            margin-left: 0.0em;
-                        }
-                        img.logoden{
-                            width: 150px;
-                           }    
-                           .container{
-                            justify-content: center;
-                                margin-left: auto;
-                                margin-right: auto;
-                           }
-                           .logo{
-                            justify-content: center;
-                            margin-left: auto;
-                            margin-right: auto;
-                         }
-                             h1.moonmain2{
-                                font-size: 1.8em;
-                             }
-                             
-        }
 
-      
-@media screen and (orientation : portrait)
- and (min-width : 1024px)
-  and (max-width : 1439px) { 
-       
-    .moontext1{
-        height:80%;
+#deals input,
+#deals button {
+    padding: 0.5em;
+    border: 1px solid #383736;
+    border-radius: 4px;
+}
+
+/*** MEDIA QUERIES ***/
+/* Tablet */
+@media (max-width: 768px) {
+    .container {
+        margin: 1em;
+        top: 3em;
+    }
+}
+
+.moontext1 {
+  margin-left: 15em;
+}
+
+h1.moonmain2 {
+    font-size: 1.5em;
+}
+
+.moonmain {
+    max-width: 90%;
+    font-size: 1.1em;
+}
+
+.btro {
+    width: 15em;
+}
+
+.info-block {
+    padding: 1.5em;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .btro {
         width: 100%;
     }
-        p.moonmain{
-            justify-content: center;
-            font-size: 1.2em;
-          
-        }
-        h3.centralog {
-            font-size: 1.4em;
-            margin-top: 0.8em;
-            margin-left: 0.7em;
-        }
-                    h4.log {
-                    font-size: 0.7em;
-                    margin-top: 8.9em;
-                    margin-left: 1.8em;
-                }
-                img.logoden{
-                    width: 150px;
-                   }    
-                   .register{
-                    font-size: 1.0em;
-                   justify-content: center;
-                   margin-bottom: 0em;
-                   margin-top: 0em;
-                   margin-right: 2em;
-                     }
-                     .logo{
-                       justify-content: start;
-                        }
-                        .container{
-                       margin-top:0em;
-                       margin-left: 5em;
-                        }
-                     h1.moonmain2{
-                        font-size: 2.0em;
-                     }
+    .info-block h2 {
+        font-size: 1.5em;
+    }
 
-            
-    } 
-    @media screen  and (orientation : portrait)
- and (min-width : 1440px) { 
-        p.moonmain{
-           
-            font-size: 1.7em;
-        }
-        .register{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-                z-index: 1;
-                grid-column: 1/3;
-                grid-row: 1/3;
-                pointer-events: none;
-               text-align: center;
-               font-size: 1.5em;
-               margin-top: 1em;
-            }
-            h1.moonmain2{
-                font-size: 2.5em;
-             }
+    #deals form {
+        flex-direction: column;
+        gap: 0.5em;
     }
-    
- /**landscape*/
 
-@media screen and (orientation : landscape)
-    and (min-width : 425px) 
-    and (max-width : 767px) { 
-        .moontext1{
-            height: 100vh;
-            width: 100vw;
-            margin-top: auto;
-            margin-left: auto;
-        }
-            p.moonmain{
-                justify-content: center;
-                font-size: 0.6em;
-              
-            }
-            h3.centralog {
-                font-size: 1.1em;
-                margin-top: 0.8em;
-                margin-left: 0.7em;
-            }
-                        h4.log {
-                        font-size: 0.6em;
-                        margin-top: 7.9em;
-                        margin-left: 1.4em;
-                    }
-                    img.logoden{
-                        width: 120px;
-                       }    
-                       
-                       button {
-                        width: 9.3em;
-                        height: 1.8em; 
-                    }
-                    .register{
-                        font-size: 0.6em;
-                        justify-content: center;
-                        margin-bottom: 3em;
-                        margin-top: 0em;
-                        margin-left: auto;
-                            margin-right: auto;
-                         }
-                         .container{
-                            justify-content: start;
-                            margin-top: 1em;
-                            margin-left: 3em;
-                            margin-right: auto;
-                           }
-                           .logo{
-                            justify-content: start;
-                            margin-left: auto;
-                            margin-right: auto;
-                            margin-top: auto;
-                            margin-bottom: auto;
-                         }
-                         h1.moonmain2{
-                            font-size: 1.0em;
-                         }
+    #deals input,
+    #deals button {
+        width: 100%;
     }
-    @media screen  and (orientation : landscape)
-    and (min-width : 768px) 
-    and (max-width : 1023px) { 
-        .moontext1{
-            justify-content: flex-end;
-            height:80vh;
-            width:100vw;
-        }
-            p.moonmain{
-                justify-content: flex-end;
-                font-size: 1.1em;
-    
-              
-            }
-            h3.centralog {
-                font-size: 1.4em;
-                margin-top: 0.8em;
-                margin-left: 0.7em;
-            }
-                        h4.log {
-                        font-size: 0.7em;
-                        margin-top: 8.9em;
-                        margin-left: 1.8em;
-                    }
-                    img.logoden{
-                        width: 150px;
-                       }    
-                       .register{
-                        font-size: 1.0em;
-                       justify-content: center;
-                       margin-bottom: auto;
-                       margin-top: 17em;
-                       margin-right: auto;
-                       margin-left: auto;
-                         }
-                         .logo{
-                           justify-content: start;
-                            }
-                            .container{
-                           margin-top:0em;
-                           margin-left: 5em;
-                            }
-                         h1.moonmain2{
-                            font-size: 1.5em;
-                         }
-   }
-    
-    @media screen  and (orientation : landscape)
-    and (min-width : 1024px) 
-    and (max-width : 1439px) { 
-        .moontext1{
-            height:80%;
-            width: 100%;
-        }
-            p.moonmain{
-                justify-content: center;
-                font-size: 1.2em;
-              
-            }
-            h3.centralog {
-                font-size: 1.4em;
-                margin-top: 0.8em;
-                margin-left: 0.7em;
-            }
-                        h4.log {
-                        font-size: 0.7em;
-                        margin-top: 8.9em;
-                        margin-left: 1.8em;
-                    }
-                    img.logoden{
-                        width: 150px;
-                       }    
-                       .register{
-                        font-size: 1.0em;
-                       justify-content: center;
-                       margin-bottom: 0em;
-                       margin-top: 0em;
-                       margin-right: 2em;
-                         }
-                         .logo{
-                           justify-content: start;
-                            }
-                            .container{
-                           margin-top:0em;
-                           margin-left: 5em;
-                            }
-                         h1.moonmain2{
-                            font-size: 2.0em;
-                         }
-   }
-   @media screen and (orientation : landscape)
-    and (min-width : 1440px){ 
-           p.moonmain{
-               font-size: 1.7em;
-               margin-top: auto;
-              margin-bottom: auto;
-           }
-           .register{
-           display: flex;
-           justify-content: center;
-           align-items: center;
-               z-index: 1;
-               grid-column: 1/3;
-               grid-row: 1/3;
-               pointer-events: none;
-              text-align: center;
-              font-size: 1.5em;
-              margin-top: 0em;
-              margin-left: auto;
-              margin-right: auto;
-           }
-         img.logoden{
-            background-color: rgb(31, 27, 24);
-            border-radius: 50%;
-            display: inline-block;
-            box-sizing: border-box;
-            opacity: 1;
-            z-index: 2;
-            position: relative;
-           width: auto;
-           height: auto;
-       }
-       h3.centralog {
-        font-size: 2.3em;
-        margin-top: 0.8em;
-        margin-left: 0.7em;
-    }
-                h4.log {
-                font-size: 1.2em;
-                margin-top: 8.4em;
-                margin-left: 1.4em;
-            }
-     .logo{
-        justify-content: start;
-        margin-top:auto;
-        margin-bottom: auto;
-        margin-left: 5em;
-        margin-right: 5em;
-         }
-         .container{
-            justify-content: start;
-        margin-top:5em;
-        margin-bottom: auto;
-        margin-left: 5em;
-        margin-right: 5em;
-         }
-     img.logoden{
-        width: 250px;
-       }    
-       h1.moonmain2{
-        font-size: 2.5em;
-     }
-    
-    }
-  
-    @media only screen
-    and (max-width : 412px) 
-    and (max-height : 700px) { 
-        .register{
-            font-size: 0.6em;
-            justify-content: center;
-            margin-bottom: 0em;
-            margin-top: 13em;
-            margin-left: auto;
-            margin-right: auto;
-             }
-        .moontext1{
-            justify-content: center;
-            height: 100vh;
-            width: 100vw;
-            grid-row: 1/3; 
-            grid-column: 1/3;
-            display: flex;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-         }
-         p.moonmain{
-            max-width: 70%;
-            height: 50%;
-            margin-bottom: 0em;
-            margin-top: 10em;
-            font-size: 0.8em;
-        }
-            h3.centralog {
-                font-size: 1.1em;
-                margin-top: 0.8em;
-                margin-left: 0.0em;
-            }
-                        h4.log {
-                        font-size: 0.6em;
-                        margin-top: 7.9em;
-                        margin-left: 0.0em;
-                    }
-                    img.logoden{
-                        width: 120px;
-                       }    
-                       .container{
-                        justify-content: center;
-                            margin-left: auto;
-                            margin-right: auto;
-                            margin-top: 4em;
-                       }
-                       .logo{
-                        justify-content: center;
-                        margin-left: auto;
-                        margin-right: auto;
-                     }
-                         h1.moonmain2{
-                            font-size: 1.0em;
-                         }
-                         
-    }
-    
-    @media only screen 
-   and (max-width : 360px) 
-   and (max-height : 598px) {
-    .register{
-        font-size: 0.5em;
-        justify-content: center;
-        margin-bottom: 0em;
-        margin-top: 15em;
-        margin-left: auto;
-        margin-right: auto;
-         }
-    .moontext1{
-        justify-content: center;
-        height: 100vh;
-        width: 100vw;
-        grid-row: 1/3; 
-        grid-column: 1/3;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-     }
-     p.moonmain{
-        max-width: 70%;
-        height: 50%;
-        margin-bottom: 0em;
-        margin-top: 10em;
-        font-size: 0.7em;
-    }
-        h3.centralog {
-            font-size: 1.0em;
-            margin-top: 0.8em;
-            margin-left: 0.0em;
-        }
-                    h4.log {
-                    font-size: 0.5em;
-                    margin-top: 7.9em;
-                    margin-left: 0.0em;
-                }
-                img.logoden{
-                    width: 100px;
-                   }    
-                   .container{
-                    justify-content: center;
-                        margin-left: auto;
-                        margin-right: auto;
-                        margin-top: 4em;
-                   }
-                   .logo{
-                    justify-content: center;
-                    margin-left: auto;
-                    margin-right: auto;
-                 }
-                     h1.moonmain2{
-                        font-size: 0.6em;
-                     }
-                     
 }
-@media only screen 
-   and (max-width : 240px) 
-   and (max-height : 320px) {
-    .register{
-        font-size: 0.5em;
-        justify-content: center;
-        margin-bottom: 0em;
-        margin-top: 17em;
-        margin-left: auto;
-        margin-right: auto;
-         }
-                     
-}
-@media only screen 
-   and (max-width : 320px) 
-   and (max-height : 300px) {
-    .register{
-        justify-content: center;
-        margin-bottom: 0em;
-        margin-top: 19em;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 0.4em;
-         }
-               p.moonmain{
-                font-size: 0.6em;
-                height: 40vh;
-               }      
-}
-@media screen and (max-width: 768px) {
-    .moonweb {
-      width: 100%; 
-      height: auto; 
-    }
-  }
