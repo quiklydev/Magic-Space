@@ -57,9 +57,13 @@ html, body
     justify-content: start;
     position: fixed;
     text-align: center;
-    width: 100%;
-    height: 80%;
+    width: auto;
+    height: auto;
     pointer-events: none;
+    bottom: 1rem;
+    left: 1rem;
+    gap: 0.6rem;
+    z-index: 3000;
 }
 
 img.logoden{
@@ -70,9 +74,34 @@ img.logoden{
     opacity: 1;
     z-index: 2;
     position: relative;
-   width: auto;
-   height: auto;
+   width: 4.5rem;
+   height: 4.5rem;
+   object-fit: cover;
    pointer-events: auto;
+}
+
+.logotext {
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    line-height: 1;
+}
+
+.brand-line {
+    font-family: 'parcifico', cursive;
+    color: var(--primary-color);
+    font-size: 1rem;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.tag-line {
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color);
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0.9;
+    margin: 0;
 }
 
 h3.centralog{
@@ -104,23 +133,22 @@ h4.log{
     will-change: opacity;
 }
 .moon{
-    box-sizing: border-box;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    top: 0; right: 0; bottom: 0; left: 0;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 video.moonweb{
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    text-align: center;
-    box-sizing: border-box;
-    display: block;
+    height: 100%;
     object-fit: cover;
-    pointer-events: all;
-    grid-column: 1/3;
-    grid-row: 1/3;
-    position: relative;
+    z-index: 0;
+    position: absolute;
 }
 .moontext1{
     opacity: 1;
@@ -134,7 +162,10 @@ video.moonweb{
     filter: contrast(2);
     word-wrap: break-word;
     pointer-events: none;
-    margin-bottom: 2em;
+    position: relative;
+    max-width: 80%;
+    align-self: center;
+    margin-bottom: 1em;
 }
 
 p.moonmain{
@@ -149,23 +180,25 @@ p.moonmain{
    line-height: 1.2;
 }
 
-.register{
+.register {
 display: flex;
 justify-content: center;
 align-items: center;
-    z-index: 10001;
+    z-index: 1;
     grid-column: 1/3;
     grid-row: 1/3;
+    flex-direction: column;
    text-align: center;
    font-size: 1.5em;
    position: relative;
-   margin-top: 1em;
+   width: fit-content;
+  margin: 1em auto;
 }
 
 button {
     width: 19.1em;
     height: 3.2em; 
- margin: 0.6em 0.4em;
+    margin: 0.6em 0.4em;
     padding: 0.3em 0.3em;
     font-weight: 700;
     font-size: 0.9em;
@@ -192,6 +225,7 @@ button {
   position: relative;
   z-index: 10001;
   pointer-events: auto;
+  margin: 1em auto;
 }
 
 .main-bottom,
@@ -257,13 +291,17 @@ h1.moonmain2{
     color: var(--secondary-color);
     font-family: Impact, Segoe UI;
    display: block;
-   max-width: 30%;
-   left: 15%;
-   line-height: 1.3;
+   max-width: 85%;
+   top: 0em;
+   line-height: 1.12;
    position: relative;
-   white-space: nowrap;
-   font-size: 2.0em;
-   
+   font-size: clamp(1.25em, 2.5vw, 2.0rem);
+   text-align: center;
+   white-space: normal;
+   word-wrap: break-word;
+   overflow-wrap: anywhere;
+   margin: 0.6em auto 1em;
+   hyphens: auto;
 }
 
 .prices{
@@ -329,6 +367,8 @@ p.moonmain4,
 p.moonmain5 {
     font-family: 'Roboto', sans-serif;
 }
+
+
 /*==Info section (Features, How It Works, and Deals)==*/
 .info-block {
     padding: 2em;
@@ -365,14 +405,13 @@ p.moonmain5 {
         margin: 1em;
         top: 3em;
     }
-}
-
-.moontext1 {
-  margin-left: 15em;
-}
 
 h1.moonmain2 {
-    font-size: 1.5em;
+    max-width: 95%;
+    left: auto;
+    white-space: normal;
+    margin: 0 auto;
+    font-size: 1.4rem;
 }
 
 .moonmain {
@@ -384,12 +423,43 @@ h1.moonmain2 {
     width: 15em;
 }
 
+img.logoden {
+    width: 3.8rem;
+    height: 3.8rem;
+}
+.logo{ 
+    left: 0.8rem;
+    bottom: 0.8rem;
+}
+
+.tag-line {
+    display: none;
+}
+    .brand-line {
+        font-size: 0.95rem;
+        white-space: nowrap;
+    }
+}
+
 .info-block {
     padding: 1.5em;
 }
 
+.moontext2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
 /* Mobile */
 @media (max-width: 480px) {
+
+    h1.moonmain2 {
+        font-size: 1.15rem;
+        max-width: 98%;
+        line-height: 1.18;
+    }
 
     .btro {
         width: 100%;
@@ -407,4 +477,27 @@ h1.moonmain2 {
     #deals button {
         width: 100%;
     }
+
+    img.logoden {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.logo{ 
+    left: 0.6rem;
+    bottom: 0.6rem;
+}
+
+.logotext {
+    display: none;
+}
+ 
+}
+
+@media (max-width: 320px) {
+    h1.moonmain2 { font-size: 1.05rem; }
+}
+
+img.logoden {
+    width: 2.8rem;
+    height: 2.8rem;
 }
