@@ -11,7 +11,7 @@ html
 
 }
 
-
+/* Reset default margins and padding */
 html, body
 {
     font-family: 'Roboto', sans-serif;
@@ -49,7 +49,7 @@ html, body
     margin-left: 0em;
     object-fit: cover;
     pointer-events: auto;
-    max-width: none;
+    max-width: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -139,6 +139,8 @@ h4.log{
     display: block;
     will-change: opacity;
 }
+
+/* Hero stction with video background */
 .moon{
     display: flex;
     flex-direction: column;
@@ -150,6 +152,7 @@ h4.log{
     overflow: hidden;
 }
 
+/* Video convering full section */
 video.moonweb{
     top: 0;
     left: 0;
@@ -284,6 +287,7 @@ button {
     margin: 0;
     padding: 0;
     width: 100%;
+    max-width: 100%;
 }
 
 .moontext2{
@@ -381,6 +385,12 @@ p.moonmain5 {
     font-family: 'Roboto', sans-serif;
 }
 
+.section {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
 /*==Info section (Features, How It Works, and Deals)==*/
 .info-block {
