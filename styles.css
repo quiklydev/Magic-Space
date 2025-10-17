@@ -425,15 +425,15 @@ p.moonmain5 {
 /* Tablet */
 @media (max-width: 768px) {
     .container {
-        margin: 1em;
+        margin: 0em;
         top: 3em;
     }
 
 h1.moonmain2 {
     max-width: 95%;
-    left: auto;
     white-space: normal;
-    margin: 0 auto;
+    margin: 0 auto 1em;
+    text-align: center;
     font-size: 1.4rem;
 }
 
@@ -462,7 +462,7 @@ img.logoden {
         font-size: 0.95rem;
         white-space: nowrap;
     }
-}
+
 
 .info-block {
     padding: 1.5em;
@@ -474,18 +474,35 @@ img.logoden {
     text-align: center;
 }
 
-
+.moontext1 {
+    max-width: 90%;
+    margin: 0 auto 1em;
+    text-align: center;
+    font-size: em;
+}
+}
 /* Mobile */
 @media (max-width: 480px) {
+
+    .moontext1 {
+         word-wrap: break-word;
+        overflow: anywhere;
+        hyphens: auto;
+    }
 
     h1.moonmain2 {
         font-size: 1.15rem;
         max-width: 98%;
         line-height: 1.18;
+        word-wrap: break-word;
+        overflow: anywhere;
+        hyphens: auto;
     }
 
     .btro {
-        width: 100%;
+        width: 90%;
+        font-size: 0.9em;
+        padding: 0.5em;
     }
     .info-block h2 {
         font-size: 1.5em;
@@ -505,7 +522,7 @@ img.logoden {
     width: 3.2rem;
     height: 3.2rem;
 }
-.logo{ 
+.logo { 
     left: 0.6rem;
     bottom: 0.6rem;
 }
@@ -513,14 +530,58 @@ img.logoden {
 .logotext {
     display: none;
 }
+
+.moonmain {
+     word-wrap: break-word;
+        overflow: anywhere;
+        hyphens: auto;
+}
  
 }
 
 @media (max-width: 320px) {
-    h1.moonmain2 { font-size: 1.05rem; }
-}
+    .moontext1 {
+    max-width: 100%;     
+    margin: 0 auto 1em;  
+    text-align: center;  
+    font-size: 0.9em;
+    word-break: break-word;
+    overflow-wrap: anywhere;     
+    hyphens: auto;
+  }
+
+  h1.moonmain2 {
+    max-width: 95%;
+    margin: 0 auto 1em;
+    text-align: center;
+    font-size: 0.95rem;
+      word-break: break-word;
+    overflow-wrap: anywhere;     
+    hyphens: auto;
+  }
+
 
 img.logoden {
     width: 2.8rem;
     height: 2.8rem;
+}
+
+.btro {
+    width: 85%;
+    font-size: 0.75em;
+    padding: 0.4em;
+}
+
+.prices p {
+    font-size: 0.8em;
+    line-height: 1.2;
+    margin: 0.3em 0;
+}
+
+.moonmain {
+      word-break: break-word;
+    overflow-wrap: anywhere;     
+    hyphens: auto;
+}
+
 }
