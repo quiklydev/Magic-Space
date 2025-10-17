@@ -46,11 +46,10 @@ html, body
     text-rendering: optimizeSpeed;
     z-index: 2;
     top: 0;
-    margin-left: 0em;
+    margin: 0;
     object-fit: cover;
     pointer-events: auto;
     max-width: 100%;
-    margin: 0;
     padding: 0;
     width: 100%;
 }
@@ -139,14 +138,14 @@ h4.log{
     will-change: opacity;
 }
 
-/* Hero stction with video background */
-.moon{
+/* Hero section with video background */
+.moon {
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     overflow: hidden;
 }
@@ -282,7 +281,6 @@ button {
     justify-content: space-between;
     z-index: 1;
     position: relative;
-    max-width: none;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -384,11 +382,12 @@ p.moonmain5 {
     font-family: 'Roboto', sans-serif;
 }
 
-.section {
+section {
     max-width: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
+    box-sizing: border-box;
 }
 
 /*==Info section (Features, How It Works, and Deals)==*/
