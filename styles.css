@@ -421,6 +421,32 @@ p.moonmain5 {
     border-radius: 4px;
 }
 
+/* Navigation bar with sticky positioning */
+
+nav {
+    padding: var(--padding-base, 2em);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Navigation links with hover effects */
+nav a {
+    margin: 0 var(--magrin-base, 1em);
+    color: var(--secondary-color, #fff);
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+nav a:hover {
+    color: var(--primary-color, #00f);
+}
+
 /*** MEDIA QUERIES ***/
 /* Tablet */
 @media (max-width: 768px) {
@@ -536,6 +562,17 @@ img.logoden {
         overflow: anywhere;
         hyphens: auto;
 }
+
+nav {
+    flex-direction: column;
+    padding: 1em;
+}
+
+nav a {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    font-size: 1em;
+}
  
 }
 
@@ -582,6 +619,12 @@ img.logoden {
       word-break: break-word;
     overflow-wrap: anywhere;     
     hyphens: auto;
+}
+
+nav a {
+    margin: 0.3em 0;
+    padding: 0.3em;
+    font-size: 0.9em;
 }
 
 }
