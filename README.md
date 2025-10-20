@@ -40,7 +40,7 @@ Optimized for performance, accessibility, and SEO - achieving **100/100/100/100 
 git clone https://github.com/quiklydev/Magic-Space.git
 cd Magic-Space
 open index.html
-
+```
 # Or run with a local server:
 npx live-server
 
@@ -61,10 +61,11 @@ npx live-server
 
 ## 📸 Screenshots
 Desktop
-<image-card alt="Magic Space Desktop Screenshot" src="assets/screenshot-desktop.png" ></image-card>
+- ![Desktop Screenshot](assets/screenshot-desktop.png)
+
 
 Mobile
-<image-card alt="Magic Space Mobile Screenshot" src="assets/screenshot-mobile.png" ></image-card>
+- ![Mobile Screenshot](assets/screenshot-mobile.png) 
 
 ## 👨‍💻 About Me
 I’m a front‑end developer passionate about creating responsive and accessible web experiences. Check out my other projects on GitHub.
