@@ -2,11 +2,11 @@
 A responsive landing page with cosmic-themed animations, built as part of The Odin Project and FreeCodeCamp curriculum.
 Optimized for performance, accessibility, and SEO - achieving **100/100/100/100 Lighthouse scores** across mobile and desktop. 
 
-<image-card alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5" ></image-card>
-<image-card alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3" ></image-card>
-<image-card alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github" ></image-card>
-<image-card alt="Git" src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git" ></image-card>
-<image-card alt="VS Code" src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code" ></image-card>
+ <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5">
+  <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3">
+  <img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github">
+  <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git">
+  <img alt="VS Code" src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code">
 
 ---
 
