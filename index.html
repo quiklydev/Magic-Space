@@ -19,7 +19,8 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" >
     <meta name="msapplication-TileColor" content="#603cba" >
     <meta name="theme-color" content="#ffffff" >
-    <meta name="description" content="Magic Space - responsive landing page with cosmic-themed animations, responsive design, and accesibility best practices.">
+    <meta name="description" content="Magic Space - responsive landing page with cosmic-theme and rocket animations, build with HTML and CSS for The Odin Project and FreeCodeCamp.">
+    <meta name="keywords" content="responsive landing page, HTML, CSS, cosmic theme, frontend developer portfolio">
   </head>
   <body style="overflow-y: auto">
     <div class="general">
@@ -55,6 +56,8 @@
               autoplay
               muted
               loop
+              aria-hidden="true"
+              role="presentation"
               style="opacity: 1"
             ></video>
             <div class="moontext1" style="opacity: 1">
@@ -92,6 +95,8 @@
               autoplay
               muted
               loop
+              aria-hidden="true"
+              role="presentation"
               style="opacity: 1"
             ></video>
             <div class="moontext1" style="opacity: 1">
@@ -125,6 +130,8 @@
               autoplay
               muted
               loop
+              aria-hidden="true"
+              role="presentation"
               style="opacity: 1"
             ></video>
             <div class="moontext1" style="opacity: 1">
@@ -157,6 +164,8 @@
               autoplay
               muted
               loop
+              aria-hidden="true"
+              role="presentation"
               style="opacity: 1"
             ></video>
             <div class="moontext1" style="opacity: 1">
@@ -189,6 +198,8 @@
               autoplay
               muted
               loop
+              aria-hidden="true"
+              role="presentation"
               style="opacity: 1"
             ></video>
             <div class="moontext1" style="opacity: 1">
@@ -199,9 +210,9 @@
             </div>
             <div class="register" style="opacity: 1">
               <div class="prices">
-                <p class="moonmain3">First flight: 01/26/26</p>
-                <p class="moonmain4">$15,000,000</p>
-                <p class="moonmain5">$10,000,000</p>
+                 <h2 class="moonmain3"> First flight: <time datetime="2026-01-26">01/26/26</time> </h2>
+                 <h3 class="moonmain4">$15,000,000</h3>
+                 <h3 class="moonmain5">$10,000,000</h3>
               </div>
               <button type="button" class="btro">
                 Register for a spaceflight
@@ -230,13 +241,14 @@
             <h2>Exclusive Software Deals</h2>
             <p>First Flight: 01/26/26</p>
             <form id="form">
+              <label for="email">Email</label>
               <input
                 id="email"
                 type="email"
                 placeholder="Enter your email"
                 required
               >
-              <button id="submiy" type="submit">Subscribe</button>
+              <button id="submit" type="submit">Subscribe</button>
             </form>
           </section>
         </main>

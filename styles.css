@@ -190,8 +190,8 @@ button {
   font-weight: 700;
   font-size: 0.9em;
   letter-spacing: 2px;
-  color: #383736;
-  border: 2px #383736 solid;
+  color: #2c2b2a;
+  border: 2px #ffffff solid;
   border-radius: 4px;
   text-transform: uppercase;
   outline: 0;
@@ -300,7 +300,7 @@ h1.moonmain2 {
   margin-top: 1em;
 }
 
-p.moonmain3 {
+h2.moonmain3 {
   box-sizing: border-box;
   font-size: 1.3em;
   color: var(--secondary-color);
@@ -316,7 +316,7 @@ p.moonmain3 {
   display: block;
   filter: contrast(2);
 }
-p.moonmain4 {
+h3.moonmain4 {
   box-sizing: border-box;
   font-size: 1.3em;
   color: var(--secondary-color);
@@ -327,7 +327,7 @@ p.moonmain4 {
   filter: contrast(2);
   white-space: nowrap;
 }
-p.moonmain5 {
+h3.moonmain5 {
   box-sizing: border-box;
   font-size: 1.3em;
   color: var(--secondary-color);
@@ -341,9 +341,9 @@ p.moonmain5 {
 
 p.moonmain,
 h1.moonmain2,
-p.moonmain3,
-p.moonmain4,
-p.moonmain5 {
+h2.moonmain3,
+h3.moonmain4,
+h3.moonmain5 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -456,9 +456,21 @@ section:hover {
   transition: background 0.5s ease;
 }
 
+#submit {
+  background: transparent;  
+  color: #ffffff;      
+  border: 2px solid #2c2b2a;
+   position: relative;
+  overflow: hidden;
+}
+
 /* Rocket engine effect for button */
+
 .btro {
-  position: relative;
+  background: transparent;  
+  color: #ffffff;      
+  border: 2px solid #2c2b2a;
+   position: relative;
   overflow: hidden;
 }
 
@@ -470,14 +482,16 @@ section:hover {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background: rgba(148, 163, 184, 0.04);
+  background: rgba(255, 255, 255, 0.15);
   transform: translate(-50%, -50%);
-  transition: width 0.6s, height 0.6s;
+  transition: width 0.6s, height 0.6s, opacity 0.6s;
+  opacity: 0;
 }
 
 .btro:hover::before {
   width: 300px;
   height: 300px;
+  opacity: 1;
 }
 
 /*** MEDIA QUERIES ***/
